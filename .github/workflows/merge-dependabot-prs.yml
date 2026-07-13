@@ -13,7 +13,7 @@ jobs:
     name: Merge Dependabot pull requests
     runs-on: ubuntu-latest
     steps:
-      - uses: adetabs/dependabot-cron-action@main
+      - uses: adetabs/dependabot-cron-action@v1.2.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           merge-method: squash
