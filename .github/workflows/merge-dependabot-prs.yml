@@ -3,6 +3,11 @@ on:
   schedule:
     - cron: '0 5 * * *'
   workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+  checks: read
+  statuses: read
 jobs:
   merge:
     name: Merge Dependabot pull requests
